@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic-Tac-Toe</title>
+    </head>
+   <body>
+<style>
+ 
+    body{
+        background-color: aqua;
+    }
+    .gamecontainer{
+        margin-top: 120px;
+        display: flex;
+       justify-content: center;
+      
+    }
+    .gamecontainer .container{
+        margin-left: 80px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-rows: repeat(3,8.6vw);
+        grid-template-columns: repeat(3,8.6vw);
+        position: relative;
+    }
+    .gamecontainer .container .box{
+        height: 120px;
+        width: 120px;
+        background-color: white;
+border-radius: 10px;
+    }
+    .gamecontainer .container .box:hover{
+       background-color:slategrey;
+    }
+    .gamecontainer .container .box .boxtext{
+      margin-left: 30px;
+      color: aqua;
+        font-size: 90px;
+    }
+    .info{
+        margin-left: 580px;
+        font-size: 60px;
+        color: black;
+    }
+     .line{
+        background-color:  rgb(14, 168, 219);
+    height: 6px;
+    position: absolute;
+    border-radius: 10px;
+    }
+    .fade-in-text {
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        -ms-animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        @-moz-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        @-o-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        @-ms-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+</style>
+ 
+<div class="gamecontainer">
+<div class="container">
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="box"><span class="boxtext"></span></div>
+    <div class="line"></div>
+</div>
+</div>
+<div class="info">
+    <p></p>
+</div>
+
+
+
+<script src="script.js" ></script>
+   </body>
+</html>
